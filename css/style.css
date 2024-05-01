@@ -55,6 +55,10 @@ nav ul li a:hover {
     border-bottom: 1px solid #535858;
 }
 
+nav div button {
+    display: none;
+}
+
 main {
     width: 710px;
     float: left;
@@ -165,4 +169,246 @@ footer {
 
 footer>p a {
     padding: 2px 10px;
+}
+
+@media screen and (max-width: 578px) {
+    #container {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #logo h1 {
+        margin-left: 10px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    nav ul {
+        margin: 10px;
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
+
+    nav div button {
+        display: block;
+        height: 60px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }	
+    a {
+        font-size: 1.2em;
+    }
+
+    #capa img {
+        width:  100%;
+    }
+
+    #postagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    aside {
+        width: 100%;
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section#visita {
+        width: 100%;
+    }  
+
+    section#galeria h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    section#galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media  screen and (min-width: 579px) and (max-width: 767px){
+    #container {
+        width: 100%;
+    }
+
+    main {
+        width: 45%;
+        margin-left: 5%;
+    }
+
+    #logo h1 {
+        margin-left: 10px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    nav ul {
+        margin: 10px;
+    }
+
+    nav div button {
+        display: block;
+        height: 60px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    a {
+        font-size: 1.2em;
+    }
+
+    #capa img {
+        width:  100%;
+    }
+
+    #postagens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    aside {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    section#depoimento {
+        display: flex;
+        justify-content: center;
+    }
+    section#depoimento img {
+        width: 100%;
+    }    
+
+    section#visita {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section#postagens article {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    section#galeria a {
+        padding: 0;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #container {
+        width: 100%;
+    }
+
+    main {
+        width: 45%;
+        margin-left: 5%;
+    }
+
+    #nav-links {
+        display: block;
+    }
+
+    #logo h1 {
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    a {
+        font-size: 1.2em;
+    }
+
+    #capa img {
+        width:  100%;
+    }
+
+    #postagens {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    aside {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    section#depoimento {
+        display: flex;
+        justify-content: center;
+    }
+
+    section#galeria a {
+        margin: 10px 0 0 30px;
+        padding: 0;
+    }
 }
